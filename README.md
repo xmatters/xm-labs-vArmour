@@ -23,6 +23,12 @@ When policy violation occurs, a payload is sent to xMatters with a list of the a
 
 Responding with **Acknowledge** will stop the user and device escalations. **Escalate** will immediately escalate to the next user (if a group was targeted) and **Create Incident** will stop escalations and create an Incident in xMatters.
 
+Screen shots of the mobile notifications
+
+<kbd><img src="media/20201215145936.png" width="300px"></kbd>  <kbd><img src="media/20201215150029.png" width="300px"></kbd>
+
+
+
 # Installation
 
 ## Create a User
@@ -44,6 +50,7 @@ Contact vArmour support and have them configure the instance to trigger a webhoo
 # Testing
 
 In vArmour trigger a policy violation that will fire the webhook to xMatters. An event will be created targeting the `dgroups.wlabels.AppOwner` and `sgroups.wlabels.AppOwner` from the payload sent from vArmour. If no notification was received, check the [Activity Stream](https://help.xmatters.com/ondemand/xmodwelcome/integrationbuilder/activity-stream.htm) to verify the webhook was received. Inspect for any errors. If the webhook was not received, contact vArmour support for further investigation.
+
 
 
 # Troubleshooting
